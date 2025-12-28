@@ -2,6 +2,8 @@
 // Created by haris on 12/20/2025.
 //
 
+#include "TicTacToe.h"
+
 #include <iostream>
 #include <array>
 #include <limits>

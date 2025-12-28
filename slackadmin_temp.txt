@@ -1,0 +1,490 @@
+1. Message, files, snippets, posts and member profiles
+
+
+
+2.  Percentage of messages viewed in public channels vs in private channels and direct messages (DMs)
+
+
+
+3. Integrate with a Data Loss Protection (DLP) provider to remove sensitive data shared in Slack
+
+
+
+4. Create an org wide channel dedicated to company trainings
+
+
+
+5. The members did not set up EMM within 72 hour window.
+
+
+
+6. Create a private channel in the HR workspace,….
+
+
+
+7. Ask the employees to post their own question in a public #help channel where Jose and team will respond.
+
+
+
+8. Move their channels into the Global workspace and convert the default channels to private, to ease the Sales teams fears about privacy.
+
+
+
+9. Configure Google Workspace SAML based SSO with Slack…
+
+
+
+10.  The workspace requires an invitation from the Workspace Admin to join.
+
+
+
+11. Members must submit a verification code along with their password each time they sign in. 
+
+
+
+12.  Roles Admin 
+
+
+
+13.  Cortez will not be able to deactivate Camdins account, only the primary owner can…
+
+
+
+14.  Create a multi workspace channel between the IT and internal workspaces.
+
+
+
+15.  Create new regional channels and name them using the #help-workplace-region format…
+
+
+
+16. Invite Only
+
+
+
+17.  Keep up to date on all channel naming conventions to accurately process requests
+
+Create a process for channel requests
+
+18.  Approve and install apps to integrate their support tools with Slack
+
+Streamline an incident management workflow
+
+Organize and name channels in a way that makes information, procedures, and policies 
+
+19.  Unlimited
+
+20. Workspace Analytics dashboard
+
+21. Remove external members from Slack connect channels when they were invited with “Can post & invite” permissions.
+
+View All external people connected to your org and the Slack Connect channels they  belong to.
+
+22.  Modify public channels & Send Messages as a member 
+
+23.  Review the Slack Connect connections in the Org Admin dashboard.
+
+24.  Enable workspace creation requests via Org Settingsl
+
+25.  Connect tools they are already using like Google Calendar or Box to slack
+
+26. Use the SCIM API to sync attributes to your member profiles
+
+27. Admin.conversations:read
+
+28. No because customer data is removed immediately upon expiration of message retention. 
+
+29. Create an ordered list of conditional rules for app and integration approvals.
+
+30. Use SCIM provisioning  to create accounts for students and faculty members, and create an identity provider group for all faculty members.
+
+31. Use third party eDiscovery app to retrieve and store data in a data warehouse. 
+
+32.  The team member who created the channel will automatically be assigned the Channel Manager role and can archive the channel.
+
+33. Keep all files including deleted files
+
+34. Make the workspace a default workspace for all current and future users. 
+
+35.  Create a new public channel for the project, invite the team members, and introduce yourself and the project scope. 
+
+36.  Set a mobile session duration of 2 weeks for all mobile devices.
+
+37.  A new member joins a channel 
+
+A specific date and time 
+
+38.  Enable workspace creation requests via Org Settings.
+
+39. Default channels orient new members and model channel naming conventions
+
+40. Search the Slack App Directory for an existing Slack app that supports the online tool.
+
+41. To make multiple discussions in the same channel easier to follow.
+
+42. Pre approve daily productivity apps, and restrict apps that security has already deemed too risky. 
+
+43. Add the Ambassadors as selected members or groups to manage Approved Apps
+
+44.  Run a campaign promoting the slack mobile app, so the sales team understands the value of mobility and persistent communications
+
+Survey they Sales team to understand what currently makes their job difficult and determine which apps integrations to prioritize.
+
+45. Convert channels from public to private
+
+Rename or archive channels
+
+Add and manage other Channel managers
+
+46. Whether to enable admin approved apps
+
+Who can invite new members
+
+47. Invite consultants through the workspace drop down menu and route approvals to a dedicated channel for admin approval
+
+48.  End users will be immediately signed out of Slack on any unmanaged mobile devices.
+
+49. Set your global message retention policies for one month, and adjust retention settings for important channels to keep everything
+
+50.  Your organizations file sharing settings will apply to all files uploaded to a Slack connect channel by any of 250 organizations that have joined the channel.
+
+51. It creates challenges to context switch and scalability in your Enterprise Grid.
+
+52. Does the app meet data security policies for your organization?
+
+What are the external services or APIs the app is connecting to?
+
+53. Turn on Mobile Session Duration to invoke an automatic log out from the Slack mobile app after a specific time frame.
+
+54.  It supports integrations with various third party apps for easy data transfer between services.
+
+Non developers can easily automate business processes.
+
+Templates are available for download.
+
+55. Allow all members access to upload custom emoji, but communicate and document the appropriate emoji use and uploads.
+
+56. The finance team and select executives have been discussing quarterly planning in a public channel.
+
+57.  Create a public channel (ex #social-LA) and add the 10 people aligned to the LA region
+
+58.  Slack data is encrypted at rest and in transit. 
+
+59.  Ask members to review the Slack tutorials section of the Help Center.
+
+Guide members to the Slack resources library on slack.com
+
+60. Standardize and communicate channel naming conventions.
+
+61.  Send a message that includes an @channel and @here to #supplier-bindings
+
+62.  Multi channel Guest with deactivation time in six months
+
+63. Use Workflow Builder to automatically send instructions on how to request access new tools…
+
+Use Workflow Builder to create a form for tool access requests…
+
+64.  Create a public announce only channel for the expense system.
+
+65. Enable a policy that allows any user role to utilize steps from the installed apps when using the Workflow builder.
+
+Enable Workflow Builder and webhooks in Workflow Builder. 
+
+66. Check that the IdP supports de-provisioning via SCIM and that the connector app is installed and configured correctly.
+
+67.  Workspace Admin
+
+68.  Utilize bulk channel lifecycle management APIs
+
+69.  Enable employees to sign up for the workspace using the companys email domain.
+
+70.  When there is a new line of business at your company.
+
+71. Enterprise Grid Only
+
+72.  Use Slack Connect to allow each organization to manage privacy settings, oversee channel naming…
+
+73. Notifies a group of members who often need to be notified at once. For example, @managers
+
+Assigns default channels to users when they start working at the company.
+
+74. Export the data from the Members section of the org analytics dashboard. 
+
+75. The member would be automatically added to the new workspace unless it is a hidden workspace. 
+
+76. Lock guest invitations from the org admin dashboard
+
+77. Require that invitations get approval via #guest-invitation-approval channel so Admins can action the requests and inform project leaders to invite individuals from outside companies as SINGLE CHANNEL GUESTS.
+
+78. Workspace Owners and Admins can view all published workflows created by members of their workspaces
+
+It is currently possible for Org Owners and Admins to view all workflows created in an Enterprise Gird Org. 
+
+79. Enable members to use the Scheduled Send feature so that messages can be sent during shared working hours.
+
+80.  Pro, Business +, and Enterprise Grid
+
+81.  Its not possible to require guests to use the Slack for EMM App
+
+82.  Create a new social workspace and move the relevant channels to that workspace.
+
+83. Identify an appropriate set of Workspace Owners and Admins for each workspace. 
+
+84. Consolidate More Deals More Money and The Greatest Sales Team…
+
+85.  Use Workflow Builder to create an onboarding workflow with webinars and help center articles. 
+
+86.  Turn on app approval within the Manage Apps Dashboard and require end users to provide a comment for each installation request in the app directory.
+
+87. Meet with your compliance and legal teams to set policies for Slack at your company
+
+88. Does the app require a license?
+
+What is the urgency level for the app request?
+
+89. Connect Google Calendar to your companys email domain…
+
+90. Changing the workspaces public channel message retention and deletion policy to Keep Everything…and allowing everyone to create channels
+
+91. Install apps from the Slack App Directory for the tools they use, and have the apps post alerts…
+
+92. Allows all users to request new workspaces, and route the requests into an admin channel where admins can action the requests as a team.
+
+93.  Deactivate the workspace admins account in the IdP and automatically  sync deactivated members from your organizations IdP.
+
+94.  The percentage of messages sent via direct message in the HR workspace to the organizations overall percent of direct messages.
+
+95.  Turn on app approval so members can only install aps that have been pre-approved.
+
+Send all notifications to a specific channel that includes all app managers for app approval. 
+
+96.  Org-wide channels are discoverable by all workspaces in the same Grid org and should only be used for information that that applies to all employees.
+
+97. They’ll receive an email…
+
+98.  Connect an identity provider (IDP) group to appropriate workspaces to control membership.
+
+
+
+1. The user group can then be added to all relevant new-hire and onboarding channels.
+
+2. Use the Discovery API to export messages and files from the channel that were sent by your company. 
+
+3. Any @mention of the Workspace Admin user group will notify all of the group members
+
+4. Refer to the avg number of days users were active within the last month 
+
+5. Restrict @here and @channel usage to Owners and Admins only.
+
+6. Create an @marketing-team user group and use the @market-team user group.
+
+7. Add the SMEs as internal app collaborators so they can directly manage the app’s settings
+
+8. Create a new private channel for planning the birthday party…
+
+9. Automatically adds or removes members of an IdP group to workspaces within your org
+
+Makes Membership for certain channels
+
+Makes membership for certain workspaces
+
+10.  Business+ and Enterprise Grid 
+
+11. Their accounts will be deactivated, However their messages and files wont be deleted. 
+
+12.  Message Retention & Deletion set to Keep Everything for public channels and not allowing overrides
+
+13. Choose and Configure your IdP before configuring SSO since end users cant sign in to Enterprise Grid without SSO.
+
+14. G Suite Auth
+
+15. As soon as possible…
+
+16. Create a default org wide channel called #announcements…
+
+17. Use the Audit Logs API to audit the file download action in the required public channel. 
+
+18. Convert the group DM to a private channel, and then invite the new members.
+
+19. Route workspace requests from an org wide help channel to a private admin only channel.
+
+20. Create and communicate a channel naming and creation policy…
+
+21. Post a message in #bread-buds redirecting everyone…
+
+22. Block message copying and the downloads
+
+23. Navigate to the Customize Slack page where Shonda can remove the custom emoji.
+
+24. Identify and restrict all apps that pose the most security risks to your organization.
+
+25. Use IDP groups to assign new employees to their respective workspaces.
+
+26. A project manager is showing their work to the rest of their project team and asking for feedback before the end of the week.
+
+27. All channel history will be visible when the external organization accepts the invitation. You can also offer to show them how to revoke the channel invitation.
+
+28. View the members tab in the slack analytics dashboard
+
+29. Install the Slack Desktop App to all of their employees machines allowing automatic updates.
+
+30. They actively communicate and promote transparency to reinforce the purpose and value of the tool.
+
+They model best practices
+
+They identify and implement key use cases for the tool
+
+31. Adjust the Slack Connect direct messages settings…
+
+32. Deactivate the members utilizing the SCIM API
+
+33. Multi Channel Guest with access to all relevant project channels
+
+34. Use Workflow Builder to welcome teammates to channels with automatic onboarding messages
+
+35. Tracy use the Admin Role for the workspace invite and use Multi Channel Guest role. 
+
+36.  Create a private channel to share the report with the VP 
+
+37.  Chat:write
+
+38.  Using an integrated Data Loss Prevent DLP solution.
+
+39. The channel will be archived on Ad Heroes workspace
+
+40. Search the persons email in the Slack Connect section of your sidebar
+
+41. Work with the benefits team to set a clear channel topic
+
+Encourage the payroll team to create their own public #help channel
+
+42.  Record a Slack Clip in an org wide announcements channel to screen share
+
+43.  Sign member out of the Enterprise Grid org by selecting Sign Out of Slack in the Admin dashboard
+
+44.  Advise the employee to initiate one or more slack connect channels to collaborate with the external organization.
+
+45. Change the channel management permission for creating private and public channels to workspace admins/owners only.
+
+46. Meet with key businesses units to identify and measure opportunities to improve productivity using Slack. 
+
+47.  It gives organizations more control over their security policies
+
+It allows employees to use the same login credentials
+
+48. The candidate encourages Slack etiquette in channels…
+
+49. Deactivate the members account in Slack settings.
+
+50.  Encourage service agents to use Huddles
+
+51. Enable automatic additions of members in an Idp Group 
+
+Enable automatic additions and removals of members in an IdP group to workspaces within your org
+
+52. Org Owners and Org Admins decide who can manage multi workspace channels 
+
+53. Provide additional learning and host a slack day. 
+
+54. The data retention needs of the new business unit for files and messages
+
+55. Confirm that you are an admin in both origin and destination workspaces.
+
+Confirm that all channel members are members of the destination workspace. 
+
+56. Integrating an app gives you an unified view into whats happening in the app natively
+
+57. Create workspaces based on how information is shared…
+
+58. #help-finance
+
+59.  Messages, files, snippets, posts and member profiles
+
+60. Workspace Administration efforts can be distributed to representatives…
+
+61.  Your company frequently shares personally identifiable information PII
+
+62. Create the minimum number of workspaces to meet your users needs to limit context switching 
+
+63.  Archive the public channel…
+
+64.  Write a script using the channels API to rename all channels…
+
+65.  Limit the posting permissions to Org Admins
+
+Create a private channel and implement a personal benefits workflow
+
+66. Leverage an org wide channel to announce new Slack features on a recurring basis.
+
+67. Do nothing….
+
+68. Workspace Owner (Primary owner of your companys slack)
+
+69. Organization Policies
+
+70. Move to the Slack Business+ Plan
+
+71.  Alpha Corp users cannot DM anyone form Beta Corp since Slack Connects DMS are Disabled.
+
+72.  Open
+
+73. Create a new channel for the project…
+
+74.  Remove the user from all their channels in bulk using the external people menu. 
+
+75. Notfiy the one channel member, then archive the channel.
+
+76.  SAML SSO and IDP groups on the Slack Business+ Plan
+
+77. Upgrade to the Slack Enterprise Grid Plan and enable domain claiming
+
+78. Restrict access to workspaces to approved mobile devices only. 
+
+79.  Block file downloads and copying on mobile devices
+
+Domain allow list to mobile access to corporate workspaces only. 
+
+80. eDiscovery  ( a bank must archive)
+
+81. Export all public channels from tidepools pro workspace. 
+
+82.  Create a naming convention for each of the 3 projects….
+
+83. The external organization has turned off Slack Connect Discoverability
+
+84.  Create a multi-workspace private channel for each department
+
+85. Use Slack default Slack Connect Channel approval permissions
+
+86. When sensitive information is placed in the incorrect channel and shared with other users.
+
+87. Delegate a Workspace Admin…
+
+88. Create a business case for focusing on a thoughtful Enterprise Grid Design
+
+Create success criteria….
+
+89. A team of HR members and hiring team members need to have an ongoing discussion regarding an open role.
+
+90. UNLIMITED
+
+91. TRUE
+
+92. Add important channels to your workspace default channels
+
+93. #team, #proj-, #ext-
+
+94. They can deactivate users automatically from their IdP
+
+They can pre provision Mutli Channel and Single Channel Guest to their workspace
+
+95. SIEM
+
+96. Manage SSO settings
+
+97. BY REQUEST
+
+98. Create new account channels and share them with the respective customers…
+
+1. Post the question in a channel related to the project
+

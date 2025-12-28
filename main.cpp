@@ -1,98 +1,103 @@
+//
+// Created by haris on 12/22/2025.
+//
+
+#include "er_triage.h"
+
 #include <iostream>
+#include <limits>
 #include <string>
 
-int add(int a, int b){
+using namespace std;
 
-    int x = a + b;
-    return x;
+static int readInt(const string& prompt, int minVal, int maxVal) {
+    while (true) {
+        cout << prompt;
+        int x;
+        if (cin >> x && x >= minVal && x <= maxVal) {
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            return x;
+        }
+        cout << "Invalid input. Enter a number between " << minVal << " and " << maxVal << ".\n";
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    }
 }
 
-int multiply(int a, int b){
-    int y = a * b;
-    return y;
+static string readLine(const string& prompt) {
+    cout << prompt;
+    string s;
+    getline(cin, s);
+    return s;
 }
 
-/*void incrementByValue(int x, int y) {
-     x = x + 1;
-     y = y + 2;
-     std::cout << "Inside incrementByValue: "<<x<< std::endl;
-     std::cout << "Inside incrementByValue: "<<y<< std::endl;
-}*/
-
-void incrementByRef(int& x, int& y) {
-    x += 1;
-    y += 2;
-    std::cout << "Inside incrementByRef: " <<x<<std::endl;
-    std::cout << "Inside incrementByRef: " <<y<<std::endl;
-    std::swap(x,y);
-    std::cout << "New x is y: " <<x<<std::endl;
-    std::cout << "New y is x: " <<y<<std::endl;
+static void menu() {
+    cout << "\n===== ER TRIAGE CLI =====\n"
+         << "1) Add patient (arrival)\n"
+         << "2) Update triage score (re-triage)\n"
+         << "3) Call next patient (treat)\n"
+         << "4) Show lobby\n"
+         << "5) Advance time (minutes)\n"
+         << "6) Quick simulate: 'critical' patient arrives\n"
+         << "0) Exit\n";
 }
 
 int main() {
-    /*std::cout << "Hello, C++" << std::endl;
-    int age;
-    double height;
-    char grade;
-    bool isStudent;
+    cout << "ER Triage System\n";
+    int agingRate = readInt("Set aging rate per 10 minutes (0-10 recommended): ", 0, 50);
 
-    std::string name;
-    std::cin >> name;
-    std::cout << "Hello "<< name << std::endl;
+    er_triage er(agingRate);
 
-    std::cin >> height;
-    std::cout << "Your Height is " << height << std::endl;
+    while (true) {
+        menu();
+        int choice = readInt("Choose option: ", 0, 6);
 
-    std::cin >> grade;
-    std::cout << "Your grade is " << grade << std::endl;
-
-    std::cin >>isStudent;
-    std::string tmp;
-    if (isStudent == 1) {
-        tmp = "true";
-    }
-    else {
-        tmp = "false";
-    }
-
-    std::cout << "Are you a student " << tmp << std::endl;
-    std::cout << sizeof(name) << std::endl;
-    std::cout << sizeof(height) << std::endl;
-    std::cout << sizeof(grade) << std::endl;
-    std::cout << sizeof(isStudent) << std::endl;*/
-
-    int a1= add(4,5);
-    int a2= multiply(1,10);
-    std::cout << a1 << std::endl;
-    std::cout << a2 << std::endl;
-    incrementByRef(a1, a2);
-    std::cout << a1 << std::endl;
-    std::cout << a2 << std::endl;
-
-    int arr[5] = {2, 4, 8, 12, 16};
-    int sum = 0;
-
-    int tmp =  arr[0];
-    // printing array elements
-    for (int i : arr) {
-        if (i > tmp) {
-            tmp = i;
+        if (choice == 0) {
+            cout << "Goodbye.\n";
+            break;
         }
-        sum += i;
-        float avg = sum / std::size(arr);
-        std::cout << sum << std::endl;
-        std::cout << tmp << std::endl;
-        std::cout << avg << std::endl;
-    }
 
-    std::string input;
-    std::cin >> input;
-    std::string reversed = "";
-    for (int i = input.length() - 1; i>=0; i--){
-        reversed += input[i];
-        if (reversed == input){
-            std::cout << "This word is a palindrome"<<std::endl;
+        if (choice == 1) {
+            string name = readLine("Patient name: ");
+            int age = readInt("Age (0-120): ", 0, 120);
+            string complaint = readLine("Complaint: ");
+            int triage = readInt("Triage score (0-100, higher = more urgent): ", 0, 100);
+
+            int id = er.addPatient(name, age, complaint, triage);
+            cout << "[OK] Added patient id=" << id << "\n";
+            er.showLobby();
+        }
+        else if (choice == 2) {
+            int id = readInt("Patient id to update: ", 1, 1'000'000);
+            int triage = readInt("New triage score (0-100): ", 0, 100);
+            er.updateTriage(id, triage);
+            er.showLobby();
+        }
+        else if (choice == 3) {
+            er.callNext();
+            er.showLobby();
+        }
+        else if (choice == 4) {
+            er.showLobby();
+        }
+        else if (choice == 5) {
+            int minutes = readInt("Advance time by minutes (1-1440): ", 1, 1440);
+            er.advanceTime(minutes);
+            er.showLobby();
+        }
+        else if (choice == 6) {
+            // This is your “someone critical arrives and cuts the line” demo
+            cout << "\n[SIM] Critical patient arriving...\n";
+            string name = readLine("Critical patient name: ");
+            int age = readInt("Age (0-120): ", 0, 120);
+            string complaint = readLine("Complaint (e.g., Chest pain, unresponsive): ");
+            int triage = readInt("Triage score (80-100 recommended): ", 0, 100);
+
+            int id = er.addPatient(name, age, complaint, triage);
+            cout << "[ALERT] Critical patient added id=" << id << " — should jump near the top.\n";
+            er.showLobby();
         }
     }
-    std::cout << "Reversed: "<<reversed<< std::endl;
+
+    return 0;
 }
